@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="styles.css" rel="stylesheet">
+   
+</head>
+<body>
+    <header>
+ <img src="C:\Users\Happy\OneDrive\Documents\dhanu\img.jpg" class="profile-image">
+        <h1>DHANUSH P</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>As a pre-final-year engineering student pursuing a B.Tech in Information Technology at Kingston Engineering College, I am deeply passionate about applying technology to address real-world challenges. My academic journey has fueled my interest in diverse areas, including data science, full-stack web development, and machine learning. Currently, I am actively seeking internships in these fields and exploring freelance opportunities. </p>
+    </section>
+
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div id="projects-container">
+           
+            <div class="project">
+                <h3>Weatherforcast</h3>
+                <p>Designed and implemented a project management tool for software development for forcasting the weather using weather api which this project is done at my 2nd year.</p>
+                 </div>
+            <div class="project">
+                <h3>Road Lane Detection</h3>
+                <p>Created a  Python project ,this project is about roadlane detection and its done at my 2nd year.</p>
+                 </div>
+           
+        </div>
+    </section>
+
+      <section id="skills">
+<h1 > Skills</h1>
+<center>
+    <h2 style="color:green">Technical Skills</h2>
+    <div class="skill">Python</div>
+    <div class="skill" style=" background-color: #ff5722;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            /* Limit the width based on content */
+            max-width: 400px; /* Adjust as needed */
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;">Web development (HTML, CSS, JS, PHP, Java Servlet)</div>
+    <div class="skill">Data Science (Basics)</div>
+    <div class="skill">Machine Learning (Basics)</div>
+    <div class="skill">Database Management System (SQL)</div>
+    <div class="skill" style="max-width: 520px;">Data analysis (using tools like Excel, SQL, or Python libraries) (Basics)</div>
+    <div class="skill">MS Office (Word, PPT, Excel) (Basics)</div>
+    <div class="skill">Java</div>
+<br/>
+    <h2 style="color:green">Soft Skills</h2>
+    <div class="skill">Work Ethics</div>
+    <div class="skill">Problem Solving</div>
+    <div class="skill">Critical Thinking</div>
+</center>
+</section>
+    <section id="contact">
+        <h2>Contact</h2>
+  
+      
+        <form id="contact-form">
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+</form>
+    </section>
+  <div class="contact-info">
+           
+            <a href="https://www.instagram.com/mbarath4466/#" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/barathm77" target="_blank">LinkedIn</a>
+        </div>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+    <footer>
+        <p>&copy; 2024 Dhanush P Portfolio</p>
+    </footer>
+
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting
+        // Get form data
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+
+        // Send the message to the specified email address
+        var mailtoLink = 'mailto:mbarath4666@gmail.com?subject=New Message from Portfolio&body=Name: ' + name + '%0AEmail: ' + email + '%0AMessage: ' + message;
+        window.location.href = mailtoLink;
+
+        // Display confirmation message (optional)
+        alert('Thank you for your message! Your email will be sent shortly.');
+
+        // Clear form fields
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('message').value = '';
+    });
+</script>
+</body>
+</html>
